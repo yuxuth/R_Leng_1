@@ -3,7 +3,7 @@ files.names <- list.files(path="/extraspace/TCGA/TCGA_clinical/",pattern = "_cli
 tcga_path <- "/home/cliu18/liucj/projects/6.autophagy/TCGA"
 library(magrittr)
 
-
+#
 cancer_types <- files.names %>% stringr::str_split(pattern = "\\_", simplify = T) %>% .[,1]
 
 
